@@ -29,7 +29,7 @@ class DDS238_4W:
         self.DeviceAddress = DeviceAddress
         self.client = client
     
-    def ReadTotal(self):
+    def ReadTotalWork(self):
         
         address=0x0000
         count=2
@@ -121,7 +121,7 @@ if __name__ == "__main__":
     device01 = DDS238_4W(DeviceAddress = 0x01, client = client)
     
     # Get the values.
-    device01.ReadTotal()
+    device01.ReadTotalWork()
     device01.ReadVoltage()
     device01.ReadAmperage()
     device01.ReadActivePower()
